@@ -1,77 +1,151 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="layout.css">
-        <!-- Magnific Popup core CSS file -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-        <script src="test.js"></script>
-    </head>
-    <body>
-        <a class="popup-youtube" href="https://www.youtube.com/watch?v=xd8dKY6Ozrg">Open YouTube video</a>
-        <div class="content">
-            Popup content
+
+<head>
+  <title>test</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" type="text/css" href="styles/magnific-popup.css">
+</head>
+
+<body>
+  </div>
+  <div class="content">
+
+    <div class="section-header">
+      <h1>Video Gallery</h1>
+    </div>
+
+    <div class="video-gallery">
+      <div class="gallery-item ">
+        <img src="https://assets.codepen.io/156905/rainier.jpg" alt="Mount Rainier" />
+        <div class="gallery-item-caption">
+          <!--<div>-->
+          <h2>Mount Rainier</h2>
+          <p>14410 feet of adventure</p>
+          <!--</div>-->
+          <a href="#popup-1" class="open-popup"></a>
         </div>
-        <a href="#test-popup" class="open-popup-link">Show inline popup</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://assets.codepen.io/156905/olympicnationalpark.jpg" alt="Olympic National Park" />
+        <div class="gallery-item-caption">
+          <!--<div>-->
+          <h2>Olympic National Park</h2>
+          <p>Mountains, rain forests, wild coastlines</p>
+          <!--</div>-->
+          <a href="#popup-2" class="open-popup"></a>
+        </div>
+      </div>
 
-  
-            <div class="section-header">
-              <h1>Video Gallery</h1>  
-             </div>
-            
-            <div class="video-gallery">
-              
-              <div class="gallery-item ">
-               <img src="https://assets.codepen.io/156905/rainier.jpg" alt="Mount Rainier"/>
-                <div class="gallery-item-caption">
-                  <!--<div>-->
-                    <h2>Mount Rainier</h2>
-                    <p>14410 feet of adventure</p>
-                  <!--</div>-->
-                  <a href="#test-popup" class="open-popup-link">show inline popup</a>
-                </div>class="vimeo-popup"
-              </div>
-          
-              <div class="gallery-item">
-                <img src="https://assets.codepen.io/156905/olympicnationalpark.jpg" alt="Olympic National Park"/>
-                <div class="gallery-item-caption">
-                  <!--<div>-->
-                    <h2>Olympic National Park</h2>
-                    <p>Mountains, rain forests, wild coastlines</p>
-                  <!--</div>-->
-                  <a class="vimeo-popup" href="https://vimeo.com/108785446" target="_blank"></a>
-                </div>
-              </div>
-              
-              <div class="gallery-item">
-               <img src="https://assets.codepen.io/156905/northcascadespark.jpg" class="north-cascades-img" alt="North Cascades National Park"/>
-                <div class="gallery-item-caption">
-                  <!--<div>-->
-                    <h2>North Cascades</h2>
-                    <p>The mountains are calling</p>
-                  <!--</div>-->
-                  <a class="vimeo-popup" href="https://vimeo.com/3653567" target="_blank"></a>
-                </div>
-              </div>
-          
-              <div class="gallery-item">
-                <img src="https://assets.codepen.io/156905/mountsthelens.jpg" alt="Mount St Helens"/>
-                <div class="gallery-item-caption">
-                  <!--<div>-->
-                    <h2>Mount St. Helens</h2>
-                    <p>The one and only</p>
-                  <!--</div>-->
-                  <a class="vimeo-popup" href="https://vimeo.com/171540296" target="_blank"></a>
-                </div>
-              </div>
-              
-           
-          
-            </div>
-          </div>
+      <div class="gallery-item">
+        <img src="https://assets.codepen.io/156905/northcascadespark.jpg" class="north-cascades-img"
+          alt="North Cascades National Park" />
+        <div class="gallery-item-caption">
+          <!--<div>-->
+          <h2>North Cascades</h2>
+          <p>The mountains are calling</p>
+          <!--</div>-->
+          <a href="#popup-3" class="open-popup"></a>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://assets.codepen.io/156905/mountsthelens.jpg" alt="Mount St Helens" />
+        <div class="gallery-item-caption">
+          <!--<div>-->
+          <h2>Mount St. Helens</h2>
+          <p>The one and only</p>
+          <!--</div>-->
+          <a href="#popup-4" class="open-popup"></a>
+        </div>
+      </div>
 
 
-    </body>
+
+    </div>
+    <!-- Popup to display upon clicking first image -->
+    <div id="popup-1" class="mfp-hide" style="text-align:center;
+    background:white;">
+
+      <video width="320" height="240" controls>
+        <source src="content/video-audio/sample-mp4-file-small.mp4" type="video/mp4">
+        your browser does not support this file type
+      </video>
+      this works 123
+    </div>
+    <!-- Popup to display -->
+    <div id="popup-2" class="mfp-hide" style="text-align:center;
+            background:white;">
+
+      <video width="320" height="240" controls>
+        <source src="content/video-audio/sample-mp4-file-small.mp4"" type="video/mp4">
+        your browser does not support this file type
+      </video>
+      this kinda works
+    </div>
+    <!-- Popup to display -->
+    <div id="popup-3" class="mfp-hide" style="text-align:center;
+        background:white;">
+
+      <video width="320" height="240" controls>
+        <source src="content/video-audio/sample-mp4-file-small.mp4"" type="video/mp4">
+        your browser does not support this file type
+      </video>
+ meh
+    </div>
+    <!-- Popup to display -->
+    <div id="popup-4" class="mfp-hide" style="text-align:center;
+            background:white;">
+
+      <video width="320" height="240" controls>
+        <source src="content/video-audio/sample-mp4-file-small.mp4"" type="video/mp4">
+        your browser does not support this file type
+      </video>
+among us
+    </div>
+  </div>
+
+
+  <!--scripts in reguards to magnific popup.-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script type="text/javascript" src="javascript/jquery.magnific-popup.min.js"></script>
+  <!--calling magnificpopup-->
+  <script>$(document).ready(function () {
+      $(".video-gallery").magnificPopup({
+        delegate: "a",
+        type: "iframe",
+        gallery: {
+          enabled: true
+        }
+      });
+    });
+  </script>
+  <script type="text/javascript">
+
+    $(document).ready(function ($) {
+      $('.open-popup').magnificPopup({
+        type: 'inline',
+
+        // Fixed position will be used
+        fixContentPos: true,
+
+        // Since disabled, Magnific Popup
+        // will not put close button
+        // inside content of popup
+        closeBtnInside: false,
+        preloader: false,
+
+        // Delay in milliseconds before
+        // popup is removed
+        removalDelay: 160,
+
+        // Class that is added to
+        // popup wrapper and background
+        mainClass: 'mfp-fade'
+      });
+    });
+  </script>
+</body>
+
 </html>
