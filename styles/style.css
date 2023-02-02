@@ -1,5 +1,7 @@
 body{
   overflow-x: hidden;
+  margin: 10px;
+
 }
 .header{
   display: flex;
@@ -28,25 +30,21 @@ flex-direction: column;
 text-align: center;
 border: solid medium black;
 }
-
 .table1:hover{
   width: 10000px;
 }
-
 .table2{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+display: flex;
+align-items: center;
+justify-content: center;
 flex-direction: column;
 text-align: center;
 border: solid medium black;
 border-left: 0px;
 
 }
-
 .table2:hover{
   width: 10000px;
-
 }
 .table3{
   display: flex;
@@ -54,24 +52,20 @@ border-left: 0px;
   justify-content: center;
 flex-direction: column;
 text-align: center;
-border: solid medium black;
+border: solid thick black;
 border-left: 0px;
 }
-
-.table3:hover{
-  width: 10000px;
-}
 #boat-img1{
-  width: 30vw;
-  height: auto;
+  width: 32vw;
+  height: 100%;
 }
 #boat-img2{
-  width: 30vw;
-  height: auto;
+  width: 32vw;
+  height: 100%;
 }
 #boat-img3{
-  width: 30vw;
-  height: auto;
+  width: 32vw;
+  height: 100%;
 }
 .maps{
  padding-bottom: 30%;
