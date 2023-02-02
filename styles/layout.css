@@ -135,8 +135,7 @@ header {
   top: 0;
   left: 0.05%;
   right: 0.1%;
-
-  background-color: #2a54ca;
+  height: 100px;
   color: #fff;
   line-height: 2.5rem;
   font-size: 0.95rem;
@@ -147,6 +146,7 @@ header nav {
   width: 100%; /* How much of the header do you want the Nav menu to take up?*/
   left: 0%; /* How far too the right do you want it to be?*/
   line-height: auto; /* Does the navbar have the same height as the header? */
+  background-color: #2a54ca;
 }
 header nav a {
   position: relative;
