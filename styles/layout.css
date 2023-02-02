@@ -122,3 +122,91 @@ body {
     transform: translate3d(0, 0, 0);
   }
   
+  *{
+    padding: 0;
+    margin: 0;
+}
+
+header {
+  position: relative;
+  display: flex; /* Use Flex display to make sure the menu items sit up next to each other and fill the space of the header*/
+  width: 99.85%;
+  top: 0;
+  left: 0.05%;
+  right: 0.1%;
+
+  background-color: #2a54ca;
+  color: #fff;
+  line-height: 2.5rem;
+  font-size: 0.95rem;
+}
+header nav {
+  position: relative;
+  display: inline-flex; /* Use Flex display to make sure the menu items sit up next to each other*/
+  width: 100%; /* How much of the header do you want the Nav menu to take up?*/
+  left: 0%; /* How far too the right do you want it to be?*/
+  line-height: auto; /* Does the navbar have the same height as the header? */
+}
+header nav a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+
+  text-decoration: none;
+  background-color: inherit;
+  color: #fcfaf9;
+  border: 0.025px #fcfaf9 solid;
+  transition: 0.15s background-color;
+}
+header nav a:hover {
+  background-color: #97d0e3;
+}
+
+/* Sub-Menu - Drop-Down */
+header nav ul li{
+    width: 100%; /* (100*100)/(width of a) */
+}
+header nav a, header nav a:hover, header nav ul{
+    width: 20%;
+}
+header ul.drop li a{
+    width: 100%;
+    color: #fff;
+    transition: .15s background-color;
+}
+header ul.drop li a:hover{
+    background-color: #cfd8dc;
+}
+
+.drop{
+    position: absolute;
+    top: 2.45rem;       /* 98% of the Line height of the Nav Area */
+    list-style: none;   /* Take the <li> formatting OFF as default */
+    display: block;
+    background-color: #263238;
+    height: 0%;         /* 100%*(numb of li items) --Auto will work if no custom req--  */
+    width: 20%;          /* Same width as nav a|ul  --Auto will work if no custom req-- */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out, visibility 0.2s linear 0.7s;
+}
+header nav a:hover + ul.drop, ul.drop:hover{
+    width: 20%;          /* Same width as header nav a|ul -- Only have to set it here if we are transition*/
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+/* Width of the <a>|<ul> mult by the number order of this drop menu (1st, 2nd, etc) */
+#home-drop{     left: 0%; }      
+#about-drop{    left: 20%; } 
+#location-drop{ left: 40%; }      
+#faq-drop{      left: 60%; } 
+#contact-drop{  left: 80%; }      
+
+/* 100%*(numb of li items in this drop down) --Auto will work but won't transition--  */
+header nav a:hover + ul#home-drop, ul#home-drop:hover{         height: 200%; }
+header nav a:hover + ul#about-drop, ul#about-drop:hover{       height: 400%; }
+header nav a:hover + ul#location-drop, ul#location-drop:hover{ height: 200%; }
+header nav a:hover + ul#faq-drop, ul#faq-drop:hover{           height: 300%; }
+header nav a:hover + ul#contact-drop, ul#contact-drop:hover{   height: auto; }
