@@ -207,6 +207,6 @@ header nav a:hover + ul.drop, ul.drop:hover{
 /* 100%*(numb of li items in this drop down) --Auto will work but won't transition--  */
 header nav a:hover + ul#home-drop, ul#home-drop:hover{         height: 200%; }
 header nav a:hover + ul#about-drop, ul#about-drop:hover{       height: 400%; }
-header nav a:hover + ul#location-drop, ul#location-drop:hover{ height: 200%; }
+header nav a:hover + ul#location-drop, ul#location-drop:hover{ height: 100%; }
 header nav a:hover + ul#faq-drop, ul#faq-drop:hover{           height: 300%; }
 header nav a:hover + ul#contact-drop, ul#contact-drop:hover{   height: auto; }
